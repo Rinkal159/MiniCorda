@@ -31,6 +31,8 @@
     --line-height-maroon-subheading-little-card-heading: 2.125rem;
     --line-height-maroon-heading: 2.875rem;
     --line-height-three-card-description:1.75rem;
+    --line-height-four-card-subheading : 1.5rem;
+    --line-height-four-card-ddescription : 1.25rem;
 
     --letter-spacing-hero-heading: -3.5px;
     --letter-spacing-hero-subheading-three-card-heading: -1px;
@@ -366,4 +368,124 @@ a {
 .little-card-icon {
     font-size: 0.8rem;
     padding: 0 3px;
+}
+
+/* Testimonial */
+.testimonials-section {
+    background-color: black ;
+    color: white;
+}
+.testimonials-container {
+    padding: 3rem 0 5rem;
+    width: 65%;
+}
+.testimonials-body {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.testimonials-header {
+    font-size: var(--font-size-little-card-heading-maroon-subheading-four-card-heading);
+    line-height: var(--line-height-maroon-subheading-little-card-heading);
+    letter-spacing: var(--letter-spacing-hero-subheading-three-card-heading);
+    font-weight: var(--font-weight-all-headings);
+}
+.common-test-card {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+}
+.common-test-title {
+    font-size: var(--font-size-four-card-subheading);
+    font-weight: var(--font-weight-all-headings);
+    line-height: var(--line-height-four-card-subheading);
+    margin-top: .5rem;
+}
+.common-test-para {
+    font-size: var(--font-size-four-card-description-little-cards-link);
+    line-height: var(--line-height-four-card-ddescription);
+    font-weight: 350;
+    margin-top: .5rem;
+}
+.test-nav {
+    margin-top: .5rem;
+}
+.test-nav a {
+    font-size: var(--font-size-four-card-description-little-cards-link);
+}
+.ebook {
+    font-size: var(--font-size-four-card-description-little-cards-link);
+    font-weight: var(--font-weight-four-card-subheading);
+}
+
+/* Resource */
+.resources-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CTA section */
+.cta-section {
+    background-color: var(--color-primary);
+}
+.cta-container {
+    padding: 2.5rem 0 5rem;
+    width: 45%;
+}
+.cta-header {
+    padding: 2.5rem 0;
+}
+.cta-title {
+    font-size: var(--font-size-hero-subheading-FAQ-heading);
+    font-weight: var(--font-weight-all-headings);
+    line-height: var(--line-height-hero-subheading);
+    letter-spacing: var(--letter-spacing-hero-subheading-three-card-heading);
+}
+.cta-para {
+    margin-top: 2.5rem;
+    font-size: var(--font-size-three-card-description);
+    line-height: var(--line-height-three-card-description);
+}
+.cta-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.cta-form label {
+    display: block;
+}
+.common-form-div input, select {
+    margin: .5rem 0;
+    padding: .75rem 1rem;
+    width: 100%;
+}
+.checkbox {
+    display: flex;
+    gap: 1rem;
+    margin: 1.25rem 0 .5rem;
+    width: 65%;
+}
+.checkbox label {
+    line-height: var(--line-height-maroon-description);
+}
+.checkbox label a {
+    text-decoration: underline;
+}
+.checkbox input {
+    font-size: 2rem;
+}
+.cta-submit-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem 0;
+}
+.cta-submit-button {
+    font-size: 1rem;
+    padding: 1rem 1.9rem 1rem 1.4rem;
+}
+.cta-submit-button:hover {
+    cursor: pointer;
 }
